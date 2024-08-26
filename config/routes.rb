@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-end
+  get "ask"=> "questions#ask" #path flecha nomrbe controlador sin controler metodo
+  post "answer" => "answers#answer"
+  #get '/answer', to: 'answers#answer'
+  end
